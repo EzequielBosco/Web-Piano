@@ -22,8 +22,9 @@ main {
     align-items: center;
     background-color: var(--color-fondo);
     border-radius: 15px;
-    width: clamp(300px, 100%, 1200px);
     height: 500px;
+    min-width: 100%;
+    width: clamp(300px, 100%, 1200px);
 }
 
 #piano-ext {
@@ -37,7 +38,19 @@ main {
     display: flex;
     align-items: start;
     justify-content: space-around;
+    align-items: center;
     color: rgb(238, 231, 231)
+}
+
+#piano-letras {
+    display: flex;
+    align-items: center;
+}
+
+#piano-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
 }
 
 ul li {
@@ -58,6 +71,7 @@ ul li {
     background-color: rgb(240, 240, 240);
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 3px 2px 2px rgb(95, 95, 95);
 }
 
 .teclas p {
@@ -70,12 +84,12 @@ ul li {
 }
 
 .blanca:active {
-    background: linear-gradient(to bottom,rgb(187, 187, 187), rgb(255, 255, 255) 100%);
+    background: linear-gradient(to bottom,rgb(163, 163, 163), rgb(255, 255, 255) 100%);
     box-shadow: inset -5px 5px 10px #ebebeb;
 }
 
 .negra:hover {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(31, 31, 31);
 }
 
 .negra:active {
@@ -101,3 +115,26 @@ ul li {
     margin: 10px -22px 0 -22px
 }
 
+.ocultar {
+    display: none;
+}
+
+button {
+    background-color: #d6d6d6;
+    border: none;
+    border-radius: 3px;
+    color: rgb(17, 17, 17);
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+button:hover {
+    box-shadow: 3px 2px 4px #505050;
+    transform: scale(1.02);
+}
+
+button:active {
+    box-shadow: none;
+    transform: scale(1);
+    background-color: #c5c5c5;
+}
