@@ -1,0 +1,103 @@
+:root {
+    --color-fondo: rgb(245, 240, 255);
+    font-family: 'Roboto';
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo);
+    border-radius: 15px;
+    width: clamp(300px, 100%, 1200px);
+    height: 500px;
+}
+
+#piano-ext {
+    background-color: rgb(46, 44, 44);
+    width: clamp(250px, 100%, 1000px);
+    height: 350px;
+    border-radius: 10px;
+}
+
+#piano-int {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    color: rgb(238, 231, 231)
+}
+
+ul li {
+    color: rgb(168, 168, 168);
+}
+
+#piano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.teclas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.teclas p {
+    margin-top: 7rem;
+}
+
+
+.blanca:hover {
+    background-color: white;
+}
+
+.blanca:active {
+    background: linear-gradient(to bottom,rgb(187, 187, 187), rgb(255, 255, 255) 100%);
+    box-shadow: inset -5px 5px 10px #ebebeb;
+}
+
+.negra:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+.negra:active {
+    background: linear-gradient(to bottom,rgb(71, 71, 71), rgb(0, 0, 0) 100%);
+    box-shadow: inset -5px 5px 10px #5e5e5e;
+}
+
+.blanca {
+    width: 50px;
+    height: 200px;
+    margin: 10.5px;
+}
+
+#junto {
+    margin-left: -8.5px;
+}
+
+.negra {
+    width: 25px;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    margin: 10px -22px 0 -22px
+}
+
