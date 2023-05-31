@@ -12,47 +12,44 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">VIRTUAL PIANO</h1>
+        <h1 class="titulo">PIANO VIRTUAL</h1>
     </header>
     <main>
         <div id="fondo">
             <div id="piano-ext">
                 <div id="piano-int">
-                    <h2>Virtual PIANO</h2>
-                    <h3>Volumen</h3>
-                    <div id="piano-letras">
-                        <h3>Letras: </h3>
-                        <div id="piano-btn">
-                            <button id="mostrar">Mostrar</button><button id="ocultar">Ocultar</button>
-                        </div>
+                    <h2>PIANO VIRTUAL</h2>
+                    <h3>Volumen <input type="range" id="volumen" min="0" max="1" value="0.5" step="any"></h3>
+                    <div>
+                        <button id="mostrar">Mostrar letras</button><button class="ocultar" id="ocultar">Ocultar letras</button>
                     </div>
                 </div>
                 <ul id="piano">
                     <li class="teclas blanca" data-key="q"><p class="ocultar">q</p></li>
-                    <li class="teclas negra" data-key="Q"><p class="ocultar">Q</p></li>
+                    <li class="teclas negra" data-key="2"><p class="ocultar">2</p></li>
                     <li class="teclas blanca" data-key="w"><p class="ocultar">w</p></li>
-                    <li class="teclas negra" data-key="W"><p class="ocultar">W</p></li>
+                    <li class="teclas negra" data-key="3"><p class="ocultar">3</p></li>
                     <li class="teclas blanca" data-key="e"><p class="ocultar">e</p></li>
                     <li class="teclas blanca" data-key="r" id="junto"><p class="ocultar">r</p></li>
-                    <li class="teclas negra" data-key="R"><p class="ocultar">R</p></li>
+                    <li class="teclas negra" data-key="5"><p class="ocultar">5</p></li>
                     <li class="teclas blanca" data-key="t"><p class="ocultar">t</p></li>
-                    <li class="teclas negra" data-key="T"><p class="ocultar">T</p></li>
+                    <li class="teclas negra" data-key="6"><p class="ocultar">6</p></li>
                     <li class="teclas blanca" data-key="y"><p class="ocultar">y</p></li>
-                    <li class="teclas negra" data-key="Y"><p class="ocultar">Y</p></li>
+                    <li class="teclas negra" data-key="7"><p class="ocultar">7</p></li>
                     <li class="teclas blanca" data-key="u"><p class="ocultar">u</p></li>
                     <!-- escala -->
-                    <li class="teclas blanca" data-key="f" id="junto"><p class="ocultar">f</p></li>
-                    <li class="teclas negra" data-key="F"><p class="ocultar">F</p></li>
-                    <li class="teclas blanca" data-key="g"><p class="ocultar">g</p></li>
-                    <li class="teclas negra" data-key="G"><p class="ocultar">G</p></li>
-                    <li class="teclas blanca" data-key="h"><p class="ocultar">h</p></li>
-                    <li class="teclas blanca" data-key="j" id="junto"><p class="ocultar">j</p></li>
-                    <li class="teclas negra" data-key="J"><p class="ocultar">J</p></li>
-                    <li class="teclas blanca" data-key="k"><p class="ocultar">k</p></li>
-                    <li class="teclas negra" data-key="K"><p class="ocultar">K</p></li>
-                    <li class="teclas blanca" data-key="l"><p class="ocultar">l</p></li>
-                    <li class="teclas negra" data-key="L"><p class="ocultar">L</p></li>
-                    <li class="teclas blanca" data-key="ñ"><p class="ocultar">ñ</p></li>
+                    <li class="teclas blanca" data-key="z" id="junto"><p class="ocultar">z</p></li>
+                    <li class="teclas negra" data-key="s"><p class="ocultar">s</p></li>
+                    <li class="teclas blanca" data-key="x"><p class="ocultar">x</p></li>
+                    <li class="teclas negra" data-key="d"><p class="ocultar">d</p></li>
+                    <li class="teclas blanca" data-key="c"><p class="ocultar">c</p></li>
+                    <li class="teclas blanca" data-key="v" id="junto"><p class="ocultar">v</p></li>
+                    <li class="teclas negra" data-key="g"><p class="ocultar">g</p></li>
+                    <li class="teclas blanca" data-key="b"><p class="ocultar">b</p></li>
+                    <li class="teclas negra" data-key="h"><p class="ocultar">h</p></li>
+                    <li class="teclas blanca" data-key="n"><p class="ocultar">n</p></li>
+                    <li class="teclas negra" data-key="j"><p class="ocultar">j</p></li>
+                    <li class="teclas blanca" data-key="m"><p class="ocultar">m</p></li>
                 </ul>
             </div>
         </div>
